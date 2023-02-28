@@ -1,0 +1,449 @@
+@font-face {
+    font-family: bajbold;
+    src: url(../../My-Fonts/Bai_Jamjuree[1]/BaiJamjuree-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: bajreg;
+    src: url(../../My-Fonts/Bai_Jamjuree[1]/BaiJamjuree-Regular.ttf);
+}
+
+:root {
+
+    /* colors */
+    --strong-cyan: hsl(171, 66%, 44%);
+    --light-cyan: hsl(233, 100%, 69%);
+    --dark-grayish-blue: hsl(210, 10%, 33%);
+    --grayish-blue: hsl(201, 11%, 66%);
+    
+    /* typography */
+    --bajb: bajbold;
+    --bajr: bajreg;
+}
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
+    scroll-behavior: smooth;
+    font-family: var(--bajr);
+    color: var(--dark-grayish-blue);
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+/* header styling */
+.master {
+    width: inherit;
+    min-height: 300px;
+    position: relative;
+}
+
+.master, .logo {
+    display: grid;
+    place-items: center;
+}
+
+.header-bg-pic {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.header-bg-pic img {
+    width: 100%;
+}
+
+.logo {
+    width: 120px;
+    height:  120px;
+    border: solid 10px var(--strong-cyan);
+    border-radius: 50%;
+    color: var(--strong-cyan);
+    font-size: 4rem;
+}
+/* end of header styling */
+
+/* main */
+
+main {
+    text-align: center;
+    width: 90%;
+    margin: auto
+}
+
+.master-title {
+    font-family: var(--bajb);
+    white-space: nowrap;
+    font-size: 40px;
+}
+
+.about {
+    color: var(--grayish-blue);
+    width: 45%;
+    margin: 20px auto 40px;
+}
+
+/* download buttons style */
+/* .download-buttons {
+} */
+
+.btn {
+    margin: 30px 10px;
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    color: white;
+    font-family: var(--bajr);
+}
+
+.ios {
+    background-color: var(--strong-cyan);
+    box-shadow: 0 8px 20px 0 var(--strong-cyan);
+}
+
+.mac {
+    background-color: var(--light-cyan);
+    box-shadow: 0 8px 20px 0 var(--light-cyan);
+}
+
+/* end of the buttons style */
+
+/* keep track and access and supercharge style */
+.keep-track, 
+.access, 
+.supercharge, 
+.availability {
+    width: 100%;
+    max-width: 650px;
+    margin: auto;
+    padding: 70px 0;
+}
+
+.keep-title,
+.access-title,
+.supercharge-title,
+.availability-title {
+    margin-bottom: 20px;
+    font-family: var(--bajb);
+    font-size: 36px;
+}
+
+.keep-about, 
+.access-about, 
+.supercharge-about, 
+.availability-about {
+    color: var(--grayish-blue);
+}
+
+/* .supercharge-about {
+    font-size: 15px;
+} */
+
+/* keep track and access style end */
+
+/* computer style */
+.computer {
+    display: flex;
+    align-items: stretch;
+    flex-flow: row nowrap;
+}
+
+.computer-pic, .computer-detail {
+    width: 50%;
+}
+
+.computer-pic {
+    overflow-x: hidden;
+}
+
+.computer-pic img {
+    display: block;
+    transform: translateX(-10%);
+}
+
+.computer-detail {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px 100px;
+}
+
+.computer-detail section {
+    margin: 40px 0;
+}
+
+.computer-detail section:first-of-type {
+    margin-top: 70px;
+}
+
+.comp-title {
+    font-size: 20px;
+    font-family: var(--bajb);
+}
+
+.comp-about {
+    font-size: 14px;
+    color: var(--grayish-blue);
+    width: 70%;
+    line-height: 26px;
+}
+
+.sync .comp-about {
+    width: 100%;
+}
+
+/* other benefits styling starts */
+.other-benefits {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: auto;
+}
+
+.benefit {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.benefit img {
+    width: 50px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.benefit-about {
+    color: var(--grayish-blue);
+    font-size: 13px;
+    height: 35%;
+    margin-top: 10px;
+}
+
+/* other styling ends here */
+
+/* sponsors */
+.sponsors {
+    margin: 80px auto;
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    place-items: center;
+}
+
+.sponsors img {
+    width: 80%;
+}
+
+/* footer style */
+
+.end {
+    margin-top: 100px;
+    background-color:hsla(202, 11%, 66%, 0.719);
+    padding: 20px;
+}
+
+.end .logo {
+    width: 50px;
+    height: 50px;
+    border: solid 5px ;
+    font-size: 28px;
+}
+
+.end .wrapper {
+    max-width: 900px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.end .wrapper small {
+    margin-left: 50px;
+}
+
+.top, .bottom {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.top a, .bottom a {
+    text-decoration: none;
+    color: var(--dark-grayish-blue);
+    font-family: var(--bajb);
+    display: block;
+    width: 180px;
+}
+
+.top a:hover, .bottom a:hover, .end .wrapper .social a:hover {
+    color: var(--strong-cyan);
+}
+
+.end .wrapper .social {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.end .wrapper .social a {
+    display: block;
+    margin-left: 20px;
+}
+/****** my media query **************/
+@media screen and (max-width: 375px) {
+    .end .wrapper .social {
+        width: 60%;
+        margin: auto;
+        justify-content: space-evenly;
+    }
+
+    .top a, .bottom a {
+        width: auto;
+        display: inline;
+        margin: 10px 0;
+    }
+
+    .top, .bottom {
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+    }
+
+    .end .wrapper small {
+        margin-left: unset;
+    }
+
+    .end .wrapper {
+        flex-direction: column;
+    }
+
+    .end {
+        margin-top: 70px;
+    }
+
+    .availability-about {
+        font-size: 14px;
+    }
+
+    .availability-title {
+        font-size: 20px;
+    }
+
+    .sponsors {
+        /* display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between; */
+        grid-template-columns: unset;
+        row-gap: 30px;
+        margin: 30px 0;
+    }
+
+    .benefit-about {
+        font-size: 14.5px;
+    }
+
+    .benefit img {
+        margin-bottom: 30px;
+    }
+
+    .benefit-title {
+        font-size: 5vw;
+
+    }
+
+    .benefit {
+        width: 100%;
+        margin-bottom: 30px;
+        min-height: 150px;
+        justify-content: flex-start;
+    }
+
+    .other-benefits {
+        flex-direction: column;
+    }
+
+    .devices img {
+        width: 100%;
+    }
+
+    .devices {
+        height: 120px;
+    }
+
+    .history .comp-about {
+        margin-bottom: 30px;
+    }
+
+    .comp-about {
+        width: 100%;
+    }
+
+    .computer-detail section {
+        margin: 10px 0;
+    }
+
+    .computer-detail {
+        text-align: center;
+        padding: 0;
+    }
+
+    .computer-pic img {
+        transform: translateX(0%);
+        width: 100%;
+        object-fit: contain;
+        height: 100%;
+    }
+
+    .computer-pic {
+        height: 200px;
+        transform: scale(1.12);
+    }
+    
+    .computer-pic, .computer-detail {
+        width: 100%;
+    }
+    
+    .computer {
+        padding-top: 10px;
+        flex-flow: wrap column;
+    }
+
+    .btn {
+        margin: 10px 0;
+        width: 90%;
+        box-shadow: unset;
+    }
+
+    .about {
+        width: 95%;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .master-title {
+        white-space: normal;
+        font-size: 9vw;
+    }
+
+    *{
+        overflow-x: hidden;
+    }
+}

@@ -1,11 +1,11 @@
 @font-face {
     font-family: bajbold;
-    src: url(../../My-Fonts/Bai_Jamjuree[1]/BaiJamjuree-SemiBold.ttf);
+    src: url(my_fonts/BaiJamjuree-SemiBold.ttf);
 }
 
 @font-face {
     font-family: bajreg;
-    src: url(../../My-Fonts/Bai_Jamjuree[1]/BaiJamjuree-Regular.ttf);
+    src: url(my_fonts/BaiJamjuree-Regular.ttf);
 }
 
 :root {
